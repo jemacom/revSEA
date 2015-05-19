@@ -33,7 +33,7 @@ void myfunc1( void *ptr)
 
     sem_wait(&mutex);
     sprintf(buf , "%s" , "Salem ");
-    sem_post(&mutex)
+    sem_post(&mutex);
 
     pthread_exit(0);
 }
