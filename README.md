@@ -1,5 +1,5 @@
-# Révision Système d'exploitation avancé
-========================================
+# Révision gestion des processus 
+================================
   1) les semaphores:
   
   -To compile semaphore.c use : 
