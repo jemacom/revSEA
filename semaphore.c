@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <pthread.h>
 
-
 void myfunc1( void *ptr );
 void myfunc2( void *ptr );
-
+char buf[24];
 
 int main(int argc , char *argv[])
 {
@@ -26,6 +25,7 @@ void myfunc1( void *ptr)
 {
     char *msg = (char *) ptr;
     printf("%s \n" , msg);
+    sprintf(buf , "%s" , "Salem ");
     pthread_exit(0);
 }
 
@@ -33,5 +33,6 @@ void myfunc2( void *ptr )
 {
     char *msg = (char *) ptr;
     printf("%s \n" , msg);
+    printf("%s\n", buf);
     pthread_exit(0);
 }
